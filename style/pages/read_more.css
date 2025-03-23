@@ -1,0 +1,43 @@
+.image-section.light {
+    background-color: #002831;
+    color: white;
+}
+.image-section.light p {
+    color: #f0f0f0;
+}
+.image-section.dark {
+    background-color: #021b20;
+}
+
+.first.image-section.light {
+    background-color: #f0f0f0;
+    color: black;
+}
+.first.image-section.light p {
+    color: black;
+}
+.first.image-section.dark {
+    background-color: #000e10;
+    color: white;
+}
+.first.image-section.dark p {
+    color: #f0f0f0;
+}
+
+.text-section.light {
+    background-color: #f0f0f0;
+}
+.text-section.dark {
+    background-color: #000e10;
+    color: #ffffff;
+}
+
+.large-image {
+    padding-block: 60px !important;
+}
+.large-image.light {
+    background-color: white;
+}
+.large-image.dark {
+    background-color: #021b20;
+}

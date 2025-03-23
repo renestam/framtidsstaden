@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/pages/home.css">
+    <link rel="stylesheet" href="../../style/components/nav_bar.css">
+    <link rel="stylesheet" href="../../style/sections/hero_section.css">
+    <link rel="stylesheet" href="../../style/sections/image_section.css">
+    <link rel="stylesheet" href="../../style/sections/about_us.css">
+    <link rel="stylesheet" href="../../style/sections/footer.css">
+    <script src="../../script/script.js"></script>
+    <title>Motorvägens överdäckning</title>
+</head>
+<body onload="loadTheme()">
+    <!-- navigation -->
+    <nav>
+        <div>
+            <div class="nav-bar">
+                <div>
+                    <a href="our-plans.html">Our plans</a>
+                </div>
+                <p>Nacka Gymnasium</p>
+                <p>NG</p>
+                <div>
+                    <a href="../../index.html">EN</a>
+                    <button onclick="changeTheme()">
+                        <img src="../../assets/icons/dark_mode.png" alt="Dark/light theme">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero-section">
+        <picture>
+            <source srcset="../../assets/hero/small_image_1.jpg" media="(max-width: 400px)">
+            <source srcset="../../assets/hero/medium_image_1.jpg" media="(max-width: 650px)">
+            <img src="../../assets/hero/large_image_1.jpg" alt="Image of the overdecking">
+        </picture>
+        <div>
+            <header>
+                <h1>300 meters of roof over Värmdöleden &#8211; but what should we place above it?</h1>
+                <p>
+                    It's our task to design one of Nacka's largest projects ever, the decking of highway in Central Nacka. 
+                    Our goal is to create a safe and pleasant environment for everyone.
+                </p>
+                <a href="read-more.html">READ MORE</a>
+            </header>
+        </div>
+    </section>
+
+    <!-- image section -->
+    <section class="image-section light">
+        <div>
+            <!-- image + buttons -->
+            <div class="image-buttons">
+                <img id="model-image" src="../../assets/model/medium_image_4.jpg" alt="Projektbild">
+                <div>
+                    <!-- changeImage(bild som ska ändras, vägen till assets-mapp, namnet på mappen med bilderna, upp eller ner i mappen) -->
+                    <button onclick="changeImage('../../', 'model', 'model-image',  -1)">
+                        <img src="../../assets/icons/left_arrow.png" alt="Left arrow">
+                    </button>
+                    <button onclick="changeImage('../../', 'model', 'model-image', 1)">
+                        <img src="../../assets/icons/right_arrow.png" alt="Right arrow">
+                    </button>
+                </div>
+            </div>
+            <!-- text -->
+            <div>
+                <h2>With a safer and nicer Nacka in focus</h2>
+                <p>
+                    We plan to transform the overdecking into a place where people can meet up and socialize. 
+                    We want to move away from the industrial feeling of a large concrete block in the middle of the highway. 
+                    Achieving this required a lot of creative brainstorming and planning.
+                </p>
+                <p>
+                    Since we ourselves live or spend a lot of time in Nacka, this project means a lot to us. 
+                    The decisions will affect us, as well as everyone living in Nacka, so we prioritize that this is done correctly. 
+                    You can read more about what we plan to do with the area in <a href="our-plans.html">Our plans</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- om oss -->
+    <section class="about-us-section light">
+        <h2>About us</h2>
+        <p>
+            We are a group of students from Nacka Gymnasium who have been tasked with 
+            developing a park during our technology classes. 
+            Everyone has worked on the project model, alongside the written part of the assignment. 
+            Since the group members pursue different technology specializations, 
+            we specialize in different areas, which is excellent for obtaining a versatile workforce.
+        </p>
+        <p>
+            We chose this area because it offers great freedom. 
+            The overhang will be completely empty &#8211; a large, open space with lots of possibilities. 
+            We will need to use a lot of creativity.
+        </p>
+        <div>
+            <div>
+                <img src="../../assets/profiles/aron.webp" alt="Arons profilbild">
+                <div>
+                    <h3>Aron Engström</h3>
+                    <p>
+                        Aron is our primary designer. Among other things, he has developed the project's own poster 
+                        and contributed with many creative ideas throughout the project. 
+                        Aron always manages to spread positive energy within the group.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="../../assets/profiles/arvid.webp" alt="Arvids profilbild">
+                <div>
+                    <h3>Arvid Renestam</h3>
+                    <p>
+                        Specialized in web development and has developed this website. 
+                        He has, among other things, worked on the discussion questions regarding the project and is also
+                        responsible for 3D printing within the group.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="../../assets/profiles/maxime.webp" alt="Maximes profilbild">
+                <div>
+                    <h3>Maxime Lindelöf</h3>
+                    <p>
+                        Maxime has developed all the project's 3D models in CAD, some of which have been 3D printed 
+                        to represent various parts of our vision. 
+                        He is also primarily responsible for our beautiful PowerPoint presentation.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="../../assets/profiles/walter.webp" alt="Walters profilbild">
+                <div>
+                    <h3>Walter Nyman</h3>
+                    <p>
+                        Web developer, writer, model builder, and idea contributor. 
+                        Like the rest of us, Walter has played a significant role in the development of the project. 
+                        He is particularly good at taking initiative and thinking outside the box.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+       <div>
+            <div>
+                <h3>Read more</h3>
+                <p>
+                    We strongly believe that this site has great potential, 
+                    and it's something we don't want to see go to waste. 
+                    Please feel free to learn more about the project with the links below.
+                </p>
+            </div>
+            <div class="footer-buttons">
+                <a href="read-more.html">More about the overdecking</a>
+                <a href="our-plans.html">Our plans regarding the park</a>
+                <a href="home.html">Back to the homepage</a>
+            </div>
+            <div>
+                <h3>Contact us</h3>
+                <p>
+                    If you wish to make suggestions or contact us for any other reason, 
+                    please email the address below. You can copy it by clicking the button.
+                </p>
+            </div>
+            <div class="footer-buttons">
+                <button onclick="copyToClipboard(this, 'Copied!')">arvid.renestam@edu.nacka.se</button>
+            </div>
+       </div>
+    </footer>
+</body>
+</html>

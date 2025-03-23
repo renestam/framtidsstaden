@@ -1,0 +1,54 @@
+.image-section > div {
+    display: grid;
+    max-width: 940px;
+    margin: auto;
+    gap: 30px;
+}
+.image-section > div .image-buttons {
+    /* fixa så att knapparnas div kan fylla hela bilden */
+    position: relative;
+}
+.image-section > div > .image-buttons div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: calc(50% - 20px);
+    padding-inline: 15px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.image-section button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px solid #ffffff;
+    padding: 3px;
+}
+.image-section button:active {
+    background-color: #026873;
+    border-color: #026873;
+}
+
+/* om användaren har en muspekare (aka kan hovra) */
+@media (hover:hover) {
+    .image-section button:hover {
+        border-width: 3.5px;
+    }
+}
+
+/* desktop layout */
+@media only screen and (min-width: 769px) {
+    .image-section div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+}

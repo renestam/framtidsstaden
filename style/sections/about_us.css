@@ -1,0 +1,60 @@
+.about-us-section {
+    background-color: #ffffff;
+    color: black;
+    padding-top: 40px;
+}
+
+.about-us-section h2 {
+    max-width: 940px;
+    margin: auto;
+    padding-bottom: 7.5px;
+}
+
+.about-us-section h3 {
+    font-size: 20px;
+}
+
+.about-us-section > p {
+    max-width: 940px;
+    margin: auto;
+    padding-inline: 2px;
+    padding-bottom: 20px;
+}
+
+.about-us-section > div {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 940px;
+    margin: auto;
+}
+.about-us-section > div > div {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #026873;
+    padding-right: 15px;
+    padding-block: 10px;
+    gap: 0px;
+}
+
+.about-us-section img {
+    height: 100px;
+    width: auto;
+    padding-inline: 5px;
+    padding-bottom: 10px;
+}
+
+/* tablet layout (lite större än vanligt för estetiska syften) */
+@media only screen and (min-width: 660px) {
+    .about-us-section div {
+        grid-template-rows: repeat(2, 1fr) ;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-us-section > div > div{
+        /* make all divs row */
+        flex-direction: row !important;
+        padding-right: 10px;
+    }
+}

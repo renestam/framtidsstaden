@@ -1,0 +1,48 @@
+.text-section > div {
+    max-width: 935px;
+    margin: auto;
+}
+
+.text-section > div > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 40px;
+}
+
+.separating-line {
+    display: none;
+    background-color: #026873;
+    width: 1.5px;
+    margin-block: 10px;
+    border-radius: 5px;
+}
+
+.text-section > div > p {
+    padding-top: 30px;
+    text-align: end;
+}
+
+.text-section > div > div > div:last-child p:first-child {
+    padding-top: 15px;
+}
+
+/* desktop layout */
+@media only screen and (min-width: 769px) {
+    .text-section > div > div {
+        grid-template-columns: 1fr 1px 1fr;
+        grid-template-rows: auto;
+    }
+
+    .text-section h2 {
+        width: 50%;
+    }
+
+    .separating-line {
+        display: block;
+    }
+
+    .text-section > div > div > div:last-child p:first-child {
+        padding-top: 0px;
+    }
+}

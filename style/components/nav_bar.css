@@ -1,0 +1,91 @@
+.nav-bar {
+    background-color: #002831;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding-inline: 7.5px;
+    border-radius: 15px;
+    gap: 10px;
+    text-align: center;
+}
+
+/* "Nacka Gymnasium" */
+.nav-bar p {
+    color: #ffffff;
+    font-family: "Lexend", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+
+    /* centrera i mitten av skärmen */
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    right: 0px;
+}
+.nav-bar p:last-of-type {
+    display: none;
+}
+
+.nav-bar div {
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.5px;
+}
+
+.nav-bar a, .nav-bar button {
+    background-color: transparent;
+    color: #ffffff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    border: 2.5px solid #005465;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 35px;
+}
+.nav-bar div:last-child a {
+    width: 35px;
+}
+.nav-bar a:active, .nav-bar button:active {
+    border: 2.5px solid #002831;
+}
+
+.nav-bar a {
+    width: auto;
+    padding-inline: 7.5px;
+    font-weight: bold;
+}
+.nav-bar button{
+    font-weight: 700;
+    font-size: 15px;
+}
+.nav-bar img {
+    height: 100%;
+    width: auto;
+    padding: 2px;
+}
+
+@media (hover:hover) {
+    .nav-bar a:hover, .nav-bar button:hover {
+        background-color: #005465;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    /* byt ut "Nacka Gymnasium"-texten mot "NG" */
+    .nav-bar p:first-of-type {
+        display: none;
+    }
+    .nav-bar p:last-of-type {
+        display: block;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,15 @@
+.three-column-text > div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 30px;
+    max-width: 940px;
+    margin: auto;
+}
+
+/* desktop layout */
+@media only screen and (min-width: 769px) {
+    .three-column-text > div {
+        grid-template-columns: 1fr 1.5px 1fr 1.5px 1fr;
+    }
+}

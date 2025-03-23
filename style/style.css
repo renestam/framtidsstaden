@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+h1 {
+    font-size: 55px;
+    padding-bottom: 7.5px;
+    line-height: 65px;
+}
+h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 25px;
+    padding-bottom: 2.5px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+p:last-child {
+    padding-bottom: 0px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+html {
+    background-color: #002831;
+}
+
+body {
+    background: #002831;
+    overflow-x: hidden;
+    min-height: 100dvh;
+}
+
+section {
+    background-color: #ffffff;
+    color: black;
+    padding-inline: 15px;
+    padding-block: 60px;
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding-inline: 15px;
+    padding-block: 7.5px;
+}
+nav > div {
+    max-width: 940px;
+    margin: auto;
+}
+
+.light {
+    color: #000000;
+}
+.dark {
+    color: #f0f0f0;
+}
+.dark h2 {
+    color: #ffffff;
+}
+
+/* tablet layout */
+@media only screen and (min-width: 600px) {
+    section, nav {
+        padding-inline: 30px;
+    }
+}
+
+/* desktop layout */
+@media only screen and (min-width: 769px) {
+    /* ta bort diagonal över footer */
+    .diagonal {
+        display: none;
+    }
+}

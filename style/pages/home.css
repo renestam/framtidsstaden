@@ -1,0 +1,40 @@
+.hero-section {
+    min-height: 90dvh;
+}
+
+.image-section.light {
+    background-color: #f0f0f0;
+    color: black;
+}
+.image-section.dark {
+    background-color: #021b20;
+    color: #f0f0f0;
+}
+.image-section.dark a {
+    color: #f0f0f0;
+}
+
+.image-section a {
+    text-decoration: underline #026873;
+}
+
+.about-us-section.light {
+    background-color: #ffffff;
+    color: black;
+}
+.about-us-section.dark {
+    background-color: #000e10;
+    color: #f0f0f0;
+}
+.about-us-section.dark h2 {
+    color: #ffffff;
+}
+
+/* mörkt tema för diagonalen över footern */
+.diagonal.dark {
+    background: linear-gradient(
+        3deg, 
+        #002831 50%, 
+        #121212 50%
+    );
+}

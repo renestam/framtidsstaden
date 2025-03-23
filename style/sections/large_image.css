@@ -1,0 +1,32 @@
+.large-image {
+    padding-block: 0px;
+}
+
+.large-image div {
+    max-width: 940px;
+    margin: auto;
+}
+.large-image img {
+    width: 100%;
+    min-height: 400px;
+    max-height: 550px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.large-image p {
+    padding-left: 2.5px;
+}
+
+/* tablet layout */
+@media only screen and (min-width: 600px) {
+    .large-image img {
+        min-height: 500px;
+    }
+}
+
+/* desktop layout */
+@media only screen and (min-width: 769px) {
+    .large-image img {
+        min-height: auto;
+    }
+}
