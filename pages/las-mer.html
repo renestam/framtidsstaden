@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/pages/read_more.css">
+    <link rel="stylesheet" href="../styles/components/nav_bar.css">
+    <link rel="stylesheet" href="../styles/sections/hero_section.css">
+    <link rel="stylesheet" href="../styles/sections/image_section.css">
+    <link rel="stylesheet" href="../styles/sections/about_us.css">
+    <link rel="stylesheet" href="../styles/sections/text_section.css">
+    <link rel="stylesheet" href="../styles/sections/large_image.css">
+    <link rel="stylesheet" href="../styles/sections/footer.css">
+    <script src="../scripts/script.js"></script>
+    <title>Läs mer</title>
+</head>
+
+<body onload="loadTheme()">
+    <!-- navigation -->
+    <nav>
+        <div>
+            <div class="nav-bar">
+                <div>
+                    <a href="vara-planer.html">Våra planer</a>
+                </div>
+                <p>Nacka Gymnasium</p>
+                <p>NG</p>
+                <div>
+                    <a href="en/read-more.html">SV</a>
+                    <button onclick="changeTheme()">
+                        <img src="../assets/icons/dark_mode.png" alt="Ljust/Mörkt Tema">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="hero-section">
+        <picture>
+            <source srcset="../assets/hero/small_image_1.jpg" media="(max-width: 400px)">
+            <source srcset="../assets/hero/medium_image_1.jpg" media="(max-width: 650px)">
+            <img src="../assets/hero/large_image_1.jpg" alt="Projektbild">
+        </picture>
+        <div>
+            <header>
+                <h1>Värmdöledens överdäckning i Centrala Nacka</h1>
+                <p>
+                    Det är en bit till 2045, men väntan kan vara väl värd.
+                    Överdäckningen innebär en stor förändring i hur vi tar oss runt Centrala Nacka,
+                    till stor det till det bättre.
+                </p>
+            </header>
+        </div>
+    </section>
+
+    <!-- image section -->
+    <section class="first image-section light">
+        <div>
+            <!-- text -->
+            <div>
+                <h2>Bakgrund &#8211; platsen idag</h2>
+                <p>
+                    Just nu finns det inget spår av överdäckning av motorvägen,
+                    det är bara motorväg i nuläget. Det finns två broar som går över motorvägen
+                    och två busshållplatser på respektive sida. Det finns tre rondeller som kan
+                    användas för att uppskatta överdäckningens område. Bilderna visar hur området ser ut idag.
+                    Överdäckningens area är uppskattad till cirka 50 000 m&#178;.
+                </p>
+            </div>
+            <!-- image + buttons -->
+            <div class="image-buttons">
+                <img id="current-site-image" src="../assets/current_site/medium_image_1.jpg" alt="Platsen idag">
+                <div>
+                    <button onclick="changeImage('../', 'current_site', 'current-site-image', -1)">
+                        <img src="../assets/icons/left_arrow.png" alt="Vänster">
+                    </button>
+                    <button onclick="changeImage('../', 'current_site', 'current-site-image', 1)">
+                        <img src="../assets/icons/right_arrow.png" alt="Höger">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- image section aktuell plan -->
+    <section class="image-section light">
+        <div>
+            <!-- image + buttons -->
+            <div class="image-buttons">
+                <img id="overdecking-image" src="../assets/overdecking/medium_image_2.jpg" alt="Överdäckning">
+                <div>
+                    <button onclick="changeImage('../', 'overdecking', 'overdecking-image', -1)">
+                        <img src="../assets/icons/left_arrow.png" alt="Vänster">
+                    </button>
+                    <button onclick="changeImage('../', 'overdecking', 'overdecking-image', 1)">
+                        <img src="../assets/icons/right_arrow.png" alt="Höger">
+                    </button>
+                </div>
+            </div>
+            <!-- text -->
+            <div>
+                <h2>Aktuell plan</h2>
+                <p>
+                    I Centrala Nacka skapas en viktig knutpunkt för hållbart resande i och mellan Nacka,
+                    Värmdö och Stockholm. En ny inbyggd bussterminal planeras i direkt anslutning
+                    till tunnelbanestationen Nacka och skapar en attraktiv kollektivtrafiknod för
+                    byte mellan buss och tunnelbana. För att göra detta möjligt ska väg 222
+                    (Värmdöleden) flyttas norrut.
+                    Projektet planeras påbörjas 2030 och vara färdigt runt 2045.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- text section -->
+    <section class="text-section light">
+        <div>
+            <h2>Överdäckningens påverkan</h2>
+            <div>
+                <div>
+                    <p>
+                        Värmdöleden har länge varit en av Stockholms mest trafikerade vägar.
+                        Med en ökande befolkning har vi i Nacka sett en stadig mängd människor och därmed trafik utåt.
+                        För att förbättra trafiksäkerheten och stadsmiljön har idén om att överdäcka en del av
+                        Värmdöleden vid Nacka Forum länge varit ett aktuellt ämne.
+                    </p>
+                    <p>
+                        En cirka 300 meter lång överdäckning av Värmdöleden och den tillkommande bussterminalen
+                        binder samman de norra och södra delarna av Centrala Nacka. Därigenom skapas en
+                        sammanhållen stadsmiljö med grönare, tryggare och mer levande kvarter.
+                        Med fler arbetsplatser, serviceutbud, mötesplatser och närheten till grönområden
+                        blir det mer attraktivt att leva och jobba i området.
+                    </p>
+                </div>
+                <div class="separating-line"></div>
+                <div>
+                    <p>
+                        Överdäckningen skulle möjliggöra ett mer lättillgängligt och sammanhängande område.
+                        Istället för en motorväg som skär av all rörlig frihet skapas ett öppet område
+                        med grönska, parker och nya bostäder.
+                    </p>
+                    <p>
+                        Överdäckningen skulle också minska bullernivåerna och förbättra luftkvaliteten i området.
+                        Genom att täcka över vägen dämpas en stor del av ljudet och människorna skiljs
+                        åt från den dåliga luften från bilarnas avgaser.
+                    </p>
+                    <p>
+                        Självfallet hade en överdäckning av Värmdöleden Nacka Forum inte varit en enkel uppgift.
+                        Finansiering är en av de största frågorna. Trots denna och andra stora svårigheter är
+                        potentialen för ett sådant projekt enorm och det ska bli spännande att
+                        se projektet ta fart i framtiden.
+                    </p>
+                </div>
+            </div>
+            <p>Källa: Nacka Kommun</p>
+        </div>
+    </section>
+
+    <!-- stor bild -->
+    <section class="large-image light">
+        <div>
+            <picture>
+                <source srcset="../assets/overdecking/small_image_1.jpg" media="(max-width: 400px)">
+                <source srcset="../assets/overdecking/medium_image_1.jpg" media="(max-width: 650px)">
+                <img src="../assets/overdecking/large_image_1.jpg" alt="Överdäckning">
+            </picture>
+            <p>Källa: Trafikverket</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <div>
+                <h3>Läs mer</h3>
+                <p>
+                    Vi tror starkt på att den här platsen har stor potential,
+                    och det är inget vi vill ska få slösas bort. Läs gärna mer om projektet med länkarna nedan.
+                </p>
+            </div>
+            <div class="footer-buttons">
+                <a href="vara-planer.html">Våra planer kring parken</a>
+                <a href="../../index.html">Tillbaka till startsidan</a>
+            </div>
+            <div>
+                <h3>Kontakta oss</h3>
+                <p>
+                    Om du vill komma med förslag eller av någon annan anledning kontakta oss,
+                    maila adressen nedan. Du kan kopiera den genom att klicka på knappen.
+                </p>
+            </div>
+            <div class="footer-buttons">
+                <button onclick="copyToClipboard(this, 'Kopierad!')">arvid.renestam@edu.nacka.se</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
