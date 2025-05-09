@@ -1,0 +1,31 @@
+{
+  "name": "framtidsstaden",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "if exist dist (rmdir /s /q dist) else mkdir dist",
+
+    "copy:html": "copyfiles index.html pages/**/*.html dist/",
+    "copy:styles": "copyfiles -u 1 styles/**/* dist/styles/",
+    "copy:assets": "copyfiles -u 1 assets/**/* dist/assets/",
+    "copy:scripts": "copyfiles -u 1 scripts/* dist/scripts/",
+
+    "build": "npm-run-all --silent clean copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renestam/framtidsstaden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renestam/framtidsstaden/issues"
+  },
+  "homepage": "https://github.com/renestam/framtidsstaden#readme",
+  "description": "",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
